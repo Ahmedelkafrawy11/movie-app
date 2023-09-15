@@ -1,0 +1,13 @@
+.images {
+  display: grid;
+  grid-gap: 15px;
+  row-gap: 30px;
+  grid-template-columns: 180px 180px 180px 180px 180px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  margin-top: 30px;
+}

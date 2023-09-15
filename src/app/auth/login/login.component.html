@@ -1,0 +1,67 @@
+<body>
+  <div class="login-form-title">Login-Form</div>
+
+  <div class="w-75 m-auto" id="form-container">
+    <form [formGroup]="loginForm" (ngSubmit)="submitLoginForm(loginForm)">
+      <div class="form-group">
+        <label for="email" class="formLabel">email</label>
+        <input
+          formControlName="email"
+          class="form-control formInput"
+          type="email"
+          id="email"
+        />
+        <div class="error-message">
+          <span
+            *ngIf="
+              loginForm.get('email')?.errors != null &&
+              loginForm.get('email')?.touched
+            "
+          >
+            <span *ngIf="loginForm.get('email')?.errors?.['required']">
+              email is required
+            </span>
+            <p *ngIf="loginForm.get('email')?.errors?.['email']">
+              email is invalid
+            </p>
+          </span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password" class="formLabel">password</label>
+        <input
+          formControlName="password"
+          class="form-control formInput"
+          type="password"
+          id="password"
+        />
+        <div class="error-message">
+          <span
+            *ngIf="
+              loginForm.get('password')?.errors != null &&
+              loginForm.get('password')?.touched
+            "
+          >
+            <span *ngIf="loginForm.get('password')?.errors?.['required']">
+              password is required
+            </span>
+            <!-- <p *ngIf="loginForm.get('password')?.errors?.['pattern']">
+            password must start with upperCase ...
+          </p> -->
+          </span>
+        </div>
+      </div>
+
+      <button [disabled]="loginForm.invalid" class="btn btn-info" type="submit">
+        Login
+      </button>
+      <div
+        *ngIf="error"
+        class="alert alert-danger w-55 m-auto h-25 text-center"
+        style="height: 10px"
+      >
+        <p class="text-dark m-auto" style="font-size: 20px">{{ error }}</p>
+      </div>
+    </form>
+  </div>
+</body>

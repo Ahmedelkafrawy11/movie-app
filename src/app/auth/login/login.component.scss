@@ -1,0 +1,41 @@
+// .py-5 {
+//   height: 800px;
+//   margin: 0;
+//   padding: 0;
+//   background-color: rgba(68, 64, 64, 0.144);
+// }
+body {
+  background-color: rgba(68, 64, 64, 0.144);
+  height: 600px;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+}
+
+button {
+  margin-left: 150px;
+}
+
+.login-form-title {
+  margin-left: 290px;
+  color: #fff;
+  padding-top: 50px;
+  //   margin-top: 50px;
+}
+
+#form-container {
+  padding: 0px;
+}
+
+span {
+  color: red;
+  font-size: 12px;
+}
+
+.error-message {
+  height: 1.5px;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}

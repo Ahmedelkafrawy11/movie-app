@@ -1,0 +1,29 @@
+.container {
+  background-color: rgba(68, 64, 64, 0.144);
+  height: 100vh;
+}
+
+button {
+  margin-left: 650px;
+}
+
+p {
+  margin-left: 290px;
+  color: #fff;
+  padding-top: 50px;
+}
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+span {
+  font-size: 12px;
+  margin: 0px;
+  color: red;
+  padding: 0;
+  background: none;
+}
+
+.error-message {
+  height: 1.5px;
+}

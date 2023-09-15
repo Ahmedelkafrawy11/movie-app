@@ -1,0 +1,24 @@
+<!-- <div class="row">
+  <div class="col-xs-5">
+   
+  </div>
+  <div class="col-xs-7">
+   
+  </div>
+</div> -->
+
+<div class="row">
+  <div class="col">
+    <img src="{{ movieDetailed.poster_path }}" alt="" class="img-responsive" />
+  </div>
+  <div class="col">
+    <h3>{{ movieDetailed.title }}</h3>
+    <button type="button" class="btn btn-info">
+      {{ adult ? "Adult" : "Child" }}
+    </button>
+    <div class="text-details">vote : {{ movieDetailed.vote_count }}</div>
+    <div class="text-details">popularity : {{ movieDetailed.popularity }}</div>
+    <div class="text-details">release Date : {{ release_date }}</div>
+    <div class="text-details">{{ movieDetailed.overview }}</div>
+  </div>
+</div>

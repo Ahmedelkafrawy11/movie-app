@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="#"
+      ><img
+        src="assets/Black And White Modern Theatre Logo.webp"
+        alt=""
+        width="60px"
+        height="60px"
+    /></a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a *ngIf="isLogged" class="nav-link" routerLink="home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a *ngIf="isLogged" class="nav-link" routerLink="about">About</a>
+        </li>
+        <li class="nav-item">
+          <a *ngIf="isLogged" class="nav-link" routerLink="movies">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a *ngIf="isLogged" class="nav-link" routerLink="network">Network</a>
+        </li>
+        <li class="nav-item">
+          <a *ngIf="isLogged" class="nav-link" routerLink="people">People</a>
+        </li>
+      </ul>
+
+      <div class="right float-right d-flex">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a *ngIf="!isLogged" class="nav-link" routerLink="login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a *ngIf="!isLogged" class="nav-link" routerLink="register"
+              >Register</a
+            >
+          </li>
+          <li class="nav-item">
+            <a *ngIf="isLogged" class="nav-link" routerLink="logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- <div class="socialMedia">
+          <i class="fab mx-2 fa-instagram"></i>
+          <i class="fab mx-2 fa-spotify"></i>
+          <i class="fab mx-2 fa-facebook"></i>
+          <i class="fab mx-2 fa-youtube"></i>
+          <i class="fab mx-2 fa-soundcloud"></i>
+        </div> -->

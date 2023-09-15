@@ -1,0 +1,36 @@
+.container {
+  background-color: black;
+  // color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.nav-item a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-item a:hover {
+  color: #09ffb9;
+}
+i {
+  color: #fff;
+}
+i:hover {
+  color: #09ffb9;
+}
+// body {
+//   background-color: rgba(68, 64, 64, 0.144);
+//   height: 600px;
+// }
+
+app-navbar {
+  height: 50px;
+}
+
+.app {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
